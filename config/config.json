@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "abcd12",
+    "database": "CraveFood",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "ybyxtnc3m0ft7q34",
+    "password": "j4qrbqu8t9c5f2t3",
+    "database": "qkrj0nlu3acovdtc",
+    "host": "y06qcehxdtkegbeb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

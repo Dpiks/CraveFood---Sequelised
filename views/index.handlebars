@@ -1,0 +1,56 @@
+<div class="container">
+
+<div class="container">
+<div class="row row_list">
+
+<div class="col-md-5 col_list craveList">
+<h1>Cravings List</h1>
+<ul>
+  {{#each dish}}
+    {{#unless this.devoured}}       
+      <li>
+              <p>
+          {{this.id}}. {{this.dish_name}}
+           <form action="/{{this.id}}?_method=PUT" method="POST">
+            <input name="id" value="{{this.id}}">
+
+            <button class="devour_btn" type="submit">Devour it!!</button>
+          </form>
+        </p>
+       
+      </li>   
+    {{/unless}} 
+  {{/each}}
+</ul>
+</div>
+<div class="col-md-5 devouredList"> 
+<h1>Devoured List</h1>    
+<ul>
+    {{#each dish}}
+    {{#if this.devoured}}    
+      <li>
+        <p>
+          {{this.id}}. {{this.dish_name}}         
+        </p>
+      </li>      
+    {{/if}}   
+  {{/each}}
+</ul>
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 addItems">
+      <h2 class="addList_h2">Add a dish to the list</h2>
+      <form method="POST" action="/" class="button-size">
+        <textarea class="dish_text" type="text" name="dish"></textarea>
+        
+        <button class="save_btn" type="submit">Save dish!</button>
+        
+      </form>
+    </div>
+  </div>
+</div>
+</div>

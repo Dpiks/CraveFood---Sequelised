@@ -1,0 +1,29 @@
+{
+  "name": "CraveFood---Node-Express-HandleBars-MySQL",
+  "version": "1.0.0",
+  "description": "An app to maintain a checklist of food that you crave for CraveFood is an app that lets users input the names of food they'd like to eat.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dpiks/CraveFood---Node-Express-HandleBars-MySQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dpiks/CraveFood---Node-Express-HandleBars-MySQL/issues"
+  },
+  "homepage": "https://github.com/Dpiks/CraveFood---Node-Express-HandleBars-MySQL#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4"
+  }
+}
