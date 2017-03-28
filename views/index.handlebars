@@ -12,7 +12,8 @@
               <p>
           {{this.id}}. {{this.dish_name}}
            <form action="/{{this.id}}?_method=PUT" method="POST">
-            <input name="id" value="{{this.id}}">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <textarea class="dish_text" type="text" name="dish"></textarea>
 
             <button class="devour_btn" type="submit">Devour it!!</button>
           </form>
